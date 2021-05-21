@@ -1,5 +1,6 @@
 package labs_examples.conditions_loops.labs;
 
+import java.util.Scanner;
 /**
  * Conditions and Loops Exercise 5: Calculator
  *
@@ -16,4 +17,18 @@ package labs_examples.conditions_loops.labs;
  */
 
 public class Exercise_05 {
+    public static void main(String[] args) {
+
+        Scanner s = new Scanner(System.in);
+        System.out.println("Enter a number: ");
+        System.out.println("Enter another number greater than the last number to calculate the sum of all the numbers and the average of the 2 chosen numbers: ");
+        int number1 = s.nextInt();
+        int number2 = s.nextInt();
+        int sum = 0;
+        for (int i = number1; i <= number2; i++) {
+            sum += i;
+        }
+        System.out.println("The sum is: " + sum);
+        System.out.println("The average is: " + (number1 + number2)/2.0);
+    }
 }

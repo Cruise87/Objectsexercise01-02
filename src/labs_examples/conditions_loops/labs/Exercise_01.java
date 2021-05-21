@@ -24,6 +24,12 @@ public class Exercise_01 {
         int number = scanner.nextInt();
 
         // write completed code here
-
+        if(number>0 && number <1000000001){
+            if(number%2 == 1){
+                System.out.println("Your number is odd");
+            }else{
+                System.out.println("Your numner is even");
+            }
+        }
     }
 }
