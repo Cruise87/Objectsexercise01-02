@@ -10,18 +10,18 @@ package labs_examples.arrays.labs;
 
 public class Exercise_04 {
     public static void main(String[] args) {
-        int[][] arr = new int[3][5];
+        int[][] arr = new int[4][8];
         for(int i = 0; i < arr.length; i++){
-            for(int j = 0; j < arr[i].length; j++){
-                arr[i][j] = (i*j) *3;
-            }
+            for(int j = 0; j < arr[i].length; j++)
+                arr[i][j] = (i*j) * 7;
         }
-        for(int[] outer : arr){
-            for(int val : outer){
-                System.out.print(val);
-            }
+        for(int[] outer: arr){
+        for(int element : outer){
+            System.out.print(element);
+        }
             System.out.println();
         }
+
     }
 
 }
