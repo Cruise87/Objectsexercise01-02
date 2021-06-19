@@ -1,4 +1,4 @@
-package labs_examples.objects_classes_methods.examples;
+
 
 /* A program that uses the Vehicle class.
 
